@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Aprender Español"
+config/description="\"Aprender Español\" est une petite application faite pour apprendre l'espagnol de façon ludique, en proposant des fiches de cours pour se rappeler des différents éléments de grammaire, conjugaison et lexique d'Espagnol.
+Cette application permet aussi de se créer des fiches de vocabulaire personnalisées pour pouvoir s'intérroger dessus au moyen de quiz pour réviser de façon approfondie votre vocabulaire et vous permettre d'apprendre ainsi plus efficacement beaucoup de mots en Espagnol."
+run/main_scene="res://pages/menu_principal/MainMenu.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+run/low_processor_mode=true
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=648
+window/size/viewport_height=968
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=6
+
+[gui]
+
+theme/custom="res://res/AppTheme.tres"
+theme/custom_font="res://res/Merriweather/Merriweather-Regular.ttf"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
