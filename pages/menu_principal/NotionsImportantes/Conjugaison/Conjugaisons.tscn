@@ -146,25 +146,15 @@ custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
 text = "Subjonctif Passé"
 
-[node name="Bt_imparfait1_subjonctif" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+[node name="Bt_imparfait_subjonctif" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
-text = "Imparfait 1"
+text = "Imparfait"
 
-[node name="Bt_imparfait2_subjonctif2" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+[node name="Bt_plusqueparfait_subjonctif3" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
-text = "Imparfait 2"
-
-[node name="Bt_plusqueparfait1_subjonctif3" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 42)
-layout_mode = 2
-text = "Plus-que-parfait 1"
-
-[node name="Bt_plusqueparfait2_subjonctif4" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 42)
-layout_mode = 2
-text = "Plus-que-parfait 2"
+text = "Plus-que-parfait"
 
 [node name="Bt_futur_subjonctif5" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 42)
@@ -239,10 +229,8 @@ layout_mode = 2
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_conditionnel_passe" to="." method="_on_bt_conditionnel_passe_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_present_subjonctif" to="." method="_on_bt_present_subjonctif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_passe_subonctif" to="." method="_on_bt_passe_subonctif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imparfait1_subjonctif" to="." method="_on_bt_imparfait_1_subjonctif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imparfait2_subjonctif2" to="." method="_on_bt_imparfait_2_subjonctif_2_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_plusqueparfait1_subjonctif3" to="." method="_on_bt_plusqueparfait_1_subjonctif_3_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_plusqueparfait2_subjonctif4" to="." method="_on_bt_plusqueparfait_2_subjonctif_4_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imparfait_subjonctif" to="." method="_on_bt_imparfait_1_subjonctif_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_plusqueparfait_subjonctif3" to="." method="_on_bt_plusqueparfait_1_subjonctif_3_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_futur_subjonctif5" to="." method="_on_bt_futur_subjonctif_5_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_futur_anterieur_subjonctif" to="." method="_on_bt_futur_anterieur_subjonctif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_present_impératif" to="." method="_on_bt_present_impératif_pressed"]

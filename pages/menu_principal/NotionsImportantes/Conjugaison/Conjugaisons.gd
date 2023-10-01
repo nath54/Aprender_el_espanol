@@ -47,31 +47,19 @@ func _on_bt_conditionnel_passe_pressed():
 
 
 func _on_bt_present_subjonctif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/Present.tscn");
 
 
 func _on_bt_passe_subonctif_pressed():
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/Passe.tscn");
+
+
+func _on_bt_imparfait_subjonctif_pressed():
 	#get_tree().change_scene_to_file();
 	pass # Replace with function body.
 
 
-func _on_bt_imparfait_1_subjonctif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
-
-
-func _on_bt_imparfait_2_subjonctif_2_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
-
-
-func _on_bt_plusqueparfait_1_subjonctif_3_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
-
-
-func _on_bt_plusqueparfait_2_subjonctif_4_pressed():
+func _on_bt_plusqueparfait_subjonctif_3_pressed():
 	#get_tree().change_scene_to_file();
 	pass # Replace with function body.
 

@@ -64,6 +64,7 @@ custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 
 [node name="Description" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+mouse_filter = 1
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("3_clcxk")
 theme_override_fonts/bold_font = ExtResource("2_5re1i")
@@ -81,6 +82,7 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+mouse_filter = 1
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("3_clcxk")
 theme_override_fonts/bold_font = ExtResource("2_5re1i")
@@ -100,6 +102,7 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+mouse_filter = 1
 layout_mode = 2
 theme_override_fonts/bold_font = ExtResource("2_5re1i")
 bbcode_enabled = true
@@ -107,6 +110,7 @@ text = "On utilise l’auxiliaire haber conjugué à l’imparfait et le partici
 fit_content = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+mouse_filter = 1
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("3_clcxk")
 theme_override_fonts/bold_font = ExtResource("2_5re1i")
