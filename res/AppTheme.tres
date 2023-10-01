@@ -21,7 +21,7 @@ grow_end = 5.0
 thickness = 2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umf8s"]
-bg_color = Color(0.886275, 0.737255, 0, 1)
+bg_color = Color(0.984314, 0.929412, 0.486275, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kspiw"]
 bg_color = Color(1, 1, 0, 1)
