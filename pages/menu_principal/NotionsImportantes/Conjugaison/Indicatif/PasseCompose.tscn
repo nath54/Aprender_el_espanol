@@ -76,8 +76,8 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-mouse_filter = 1
 layout_mode = 2
+mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("4_jx1g2")
 theme_override_fonts/bold_font = ExtResource("2_kav33")
 theme_override_fonts/italics_font = ExtResource("3_fe0mw")
@@ -100,16 +100,16 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-mouse_filter = 1
 layout_mode = 2
+mouse_filter = 1
 theme_override_fonts/bold_font = ExtResource("2_kav33")
 bbcode_enabled = true
 text = "Pour conjuguer les verbes au passé composé, on conjugue le verbe [b]haber[/b] au présent de l'indicatif et on met après le verbe à conjuguer sous sa forme de participe passé."
 fit_content = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-mouse_filter = 1
 layout_mode = 2
+mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("4_jx1g2")
 theme_override_fonts/bold_font = ExtResource("2_kav33")
 theme_override_fonts/italics_font = ExtResource("3_fe0mw")

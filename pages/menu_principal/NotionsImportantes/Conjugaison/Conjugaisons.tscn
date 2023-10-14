@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 follow_focus = true
-scroll_vertical = 44
+scroll_vertical = 1186
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
 layout_mode = 2
@@ -177,15 +177,10 @@ layout_mode = 2
 text = "L’impératif est le mode utilisé pour donner un ordre ou un conseil. En espagnol, ce mode n’a qu’un seul temps verbal : l’impératif présent (pas d’impératif passé). L’impératif peut être utilisé aux formes affirmative et négative."
 autowrap_mode = 3
 
-[node name="Bt_present_impératif" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+[node name="Bt_imperatif" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
-text = "Présent de l'impératif"
-
-[node name="Bt_present_impératif_negatif" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 42)
-layout_mode = 2
-text = "Présent de l'impératif (Négatif)"
+text = "Impératif"
 
 [node name="Forme Impersonnelles" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -208,10 +203,15 @@ custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
 text = "Gérondif"
 
-[node name="Bt_participe_regulier" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+[node name="Bt_participe_present" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
-text = "Participe régulier"
+text = "Participe présent"
+
+[node name="Bt_participe_passe" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Participe présent"
 
 [node name="HSeparator3" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(500, 0)
@@ -229,12 +229,12 @@ layout_mode = 2
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_conditionnel_passe" to="." method="_on_bt_conditionnel_passe_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_present_subjonctif" to="." method="_on_bt_present_subjonctif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_passe_subonctif" to="." method="_on_bt_passe_subonctif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imparfait_subjonctif" to="." method="_on_bt_imparfait_1_subjonctif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_plusqueparfait_subjonctif3" to="." method="_on_bt_plusqueparfait_1_subjonctif_3_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imparfait_subjonctif" to="." method="_on_bt_imparfait_subjonctif_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_plusqueparfait_subjonctif3" to="." method="_on_bt_plusqueparfait_subjonctif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_futur_subjonctif5" to="." method="_on_bt_futur_subjonctif_5_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_futur_anterieur_subjonctif" to="." method="_on_bt_futur_anterieur_subjonctif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_present_impératif" to="." method="_on_bt_present_impératif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_present_impératif_negatif" to="." method="_on_bt_present_impératif_negatif_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_imperatif" to="." method="_on_bt_present_impératif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_infinitif" to="." method="_on_bt_infinitif_pressed"]
 [connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_gérondif" to="." method="_on_bt_gérondif_pressed"]
-[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_participe_regulier" to="." method="_on_bt_participe_regulier_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_participe_present" to="." method="_on_bt_participe_present_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/VBoxContainer/Bt_participe_passe" to="." method="_on_bt_participe_passe_pressed"]

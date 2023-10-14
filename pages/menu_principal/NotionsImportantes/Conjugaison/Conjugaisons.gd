@@ -55,45 +55,37 @@ func _on_bt_passe_subonctif_pressed():
 
 
 func _on_bt_imparfait_subjonctif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	print("Error")
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/Imparfait.tscn");
 
 
-func _on_bt_plusqueparfait_subjonctif_3_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+func _on_bt_plusqueparfait_subjonctif_pressed():
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/PlusQueParfait.tscn");
 
 
 func _on_bt_futur_subjonctif_5_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/Futur.tscn");
 
 
 func _on_bt_futur_anterieur_subjonctif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Subjonctif/FuturAntérieur.tscn");
 
 
 func _on_bt_present_impératif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
-
-
-func _on_bt_present_impératif_negatif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Imperatif/Imperatif.tscn");
 
 
 func _on_bt_infinitif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Formes/Infinitif.tscn");
 
 
 func _on_bt_gérondif_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Formes/Gerondif.tscn");
 
 
-func _on_bt_participe_regulier_pressed():
-	#get_tree().change_scene_to_file();
-	pass # Replace with function body.
+func _on_bt_participe_present_pressed():
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Formes/ParticipePresent.tscn");
+
+
+func _on_bt_participe_passe_pressed():
+	get_tree().change_scene_to_file("res://pages/menu_principal/NotionsImportantes/Conjugaison/Formes/ParticipePasse.tscn");
