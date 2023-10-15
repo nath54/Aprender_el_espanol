@@ -75,13 +75,16 @@ layout_mode = 2
 text = "Nouvelle Fiche"
 
 [node name="VSeparator" type="VSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Fiche+"]
+visible = false
 layout_mode = 2
 
 [node name="TrierPar" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Fiche+"]
+visible = false
 layout_mode = 2
 text = "Trier par"
 
 [node name="OptionButton" type="OptionButton" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Fiche+"]
+visible = false
 layout_mode = 2
 item_count = 2
 selected = 0
@@ -101,6 +104,7 @@ size_flags_vertical = 3
 theme_override_constants/separation = 25
 
 [node name="ExFiche1" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches"]
+visible = false
 custom_minimum_size = Vector2(500, 45)
 layout_mode = 2
 
@@ -119,6 +123,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ExFiche2" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches"]
+visible = false
 custom_minimum_size = Vector2(500, 45)
 layout_mode = 2
 
