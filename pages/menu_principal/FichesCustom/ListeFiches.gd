@@ -48,7 +48,8 @@ func add_fiche_button(f_name: String, f_path: String):
 
 
 func click_fiche_bt(fp: String):
-	print("TEST TEST : ", fp);
+	Global.ouverture_fiche = fp;
+	get_tree().change_scene_to_file("res://pages/menu_principal/FichesCustom/Fiche.tscn");
 
 
 func _ready():
