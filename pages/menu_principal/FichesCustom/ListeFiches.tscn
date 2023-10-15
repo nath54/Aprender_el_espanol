@@ -38,6 +38,10 @@ custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
 theme_override_constants/separation = 15
 
+[node name="HSeparator2" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -97,18 +101,27 @@ popup/item_1/id = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ListeFiches" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer"]
-custom_minimum_size = Vector2(0, 300)
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ListeFiches" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 25
 
-[node name="ExFiche1" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches"]
+[node name="ExFiche1" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches"]
 visible = false
-custom_minimum_size = Vector2(500, 45)
+custom_minimum_size = Vector2(350, 45)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches/ExFiche1"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches/ExFiche1"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -116,18 +129,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches/ExFiche1/HBoxContainer"]
+[node name="Label" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches/ExFiche1/HBoxContainer"]
 layout_mode = 2
 text = "Fiche interne à l'application"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ExFiche2" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches"]
+[node name="ExFiche2" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches"]
 visible = false
-custom_minimum_size = Vector2(500, 45)
+custom_minimum_size = Vector2(350, 45)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches/ExFiche2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches/ExFiche2"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -135,7 +148,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/ListeFiches/ExFiche2/HBoxContainer"]
+[node name="Label" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/ScrollContainer/MarginContainer/ListeFiches/ExFiche2/HBoxContainer"]
 layout_mode = 2
 text = "Fiche perso"
 horizontal_alignment = 1
