@@ -19,7 +19,7 @@ func _on_bt_lexique_pressed():
 
 
 func _on_bt_fiches_customs_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://pages/menu_principal/FichesCustom/ListeFiches.tscn");
 
 
 func _on_bt_quiz_pressed():
