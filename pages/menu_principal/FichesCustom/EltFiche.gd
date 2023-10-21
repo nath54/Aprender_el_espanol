@@ -3,7 +3,7 @@ class_name EltFiche
 
 @export var words_1: Array = [];
 @export var words_2: Array = [];
-var initialized: bool = false;
+var readonly: bool = false;
 
 var mot_node = preload("res://pages/menu_principal/FichesCustom/Mot.tscn");
 
@@ -20,13 +20,19 @@ func set_words_col(col: VBoxContainer, word_list: Array):
 	col.add_child(Vide.new());
 
 
-func _ready():
-	pass
-
-
 func _on_col_1_ready():
 	set_words_col(%Col1, self.words_1);
 
 
 func _on_col_2_ready():
 	set_words_col(%Col2, self.words_2);
+
+
+func _on_bt_edit_ready():
+	if readonly:
+		$Elt/Bts/Bt_edit.visible = false;
+
+
+func _on_bt_supr_ready():
+	if readonly:
+		$Elt/Bts/Bt_supr.visible = false;

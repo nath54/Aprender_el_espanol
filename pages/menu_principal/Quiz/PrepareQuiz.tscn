@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://cwqpr0d8co88j"]
+
+[node name="PrepareQuiz" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="HSeparator2" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Bt_Retour" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Retour"
+
+[node name="Titre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Préparation du quiz	"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="DescrFiches" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sélectionnez les fiches sur lesquelles vous souhaitez vous interroger:"
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Button" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "+"
+
+[node name="PanelContainer" type="PanelContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Nom de fiche 1"
+
+[node name="Button" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer/HBoxContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "x"
+
+[node name="HSeparator3" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="DescrSens" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sélectionnez le sens de l'interrogation:"
+autowrap_mode = 3
+
+[node name="OptSens" type="OptionButton" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+item_count = 3
+selected = 0
+popup/item_0/text = "fr -> esp"
+popup/item_0/id = 0
+popup/item_1/text = "esp -> fr"
+popup/item_1/id = 1
+popup/item_2/text = "les deux sens"
+popup/item_2/id = 2
+
+[node name="HSeparator4" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="DescrType" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sélectionnez le type de quiz:"
+autowrap_mode = 3
+
+[node name="OptType" type="OptionButton" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+item_count = 2
+selected = 0
+popup/item_0/text = "cartes"
+popup/item_0/id = 0
+popup/item_1/text = "écrire le texte"
+popup/item_1/id = 1
+
+[node name="HSeparator5" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="BtStartQuiz" type="Button" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Lancer le quiz"
+
+[node name="HSeparator6" type="HSeparator" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2

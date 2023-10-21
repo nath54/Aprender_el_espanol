@@ -7,6 +7,7 @@
 custom_minimum_size = Vector2(200, 30)
 size_flags_horizontal = 5
 size_flags_vertical = 4
+mouse_filter = 1
 theme_override_styles/panel = ExtResource("1_ah80h")
 script = ExtResource("1_i4ui2")
 
