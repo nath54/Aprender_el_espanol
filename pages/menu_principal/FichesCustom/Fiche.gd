@@ -5,7 +5,7 @@ var readonly: bool = false;
 var elt_node := preload("res://pages/menu_principal/FichesCustom/EltFiche.tscn");
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	if Global.ouverture_fiche != "":
 		readonly = Global.ouverture_fiche_readonly;
 		var data: Dictionary = Lib.load_file(Global.ouverture_fiche);
@@ -27,5 +27,5 @@ func _ready():
 			$ScrollContainer/CenterContainer/Container/HBoxContainer2/Bt_modif.visible = false;
 
 
-func _on_bt_retour_pressed():
+func _on_bt_retour_pressed() -> void:
 	get_tree().change_scene_to_file("res://pages/menu_principal/FichesCustom/ListeFiches.tscn");

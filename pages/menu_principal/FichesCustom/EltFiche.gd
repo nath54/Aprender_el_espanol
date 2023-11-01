@@ -7,7 +7,7 @@ var readonly: bool = false;
 
 var mot_node = preload("res://pages/menu_principal/FichesCustom/Mot.tscn");
 
-func set_words_col(col: VBoxContainer, word_list: Array):
+func set_words_col(col: VBoxContainer, word_list: Array) -> void:
 	# Cleaning
 	for c in col.get_children():
 		c.queue_free();
@@ -20,19 +20,19 @@ func set_words_col(col: VBoxContainer, word_list: Array):
 	col.add_child(Vide.new());
 
 
-func _on_col_1_ready():
+func _on_col_1_ready() -> void:
 	set_words_col(%Col1, self.words_1);
 
 
-func _on_col_2_ready():
+func _on_col_2_ready() -> void:
 	set_words_col(%Col2, self.words_2);
 
 
-func _on_bt_edit_ready():
+func _on_bt_edit_ready() -> void:
 	if readonly:
 		$Elt/Bts/Bt_edit.visible = false;
 
 
-func _on_bt_supr_ready():
+func _on_bt_supr_ready() -> void:
 	if readonly:
 		$Elt/Bts/Bt_supr.visible = false;
